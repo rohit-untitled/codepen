@@ -1,0 +1,76 @@
+/* for projects cards */
+* {
+
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  position: relative;
+  margin: 10px;
+  height: 80vh;
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 0.2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.panel.active {
+  flex: 1;
+}
+
+.panel h3 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 26px;
+  font-family: Arial;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel.active h3 {
+  opacity: 1;
+}
+
+#panel1 {
+  background-image: url(https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60);
+}
+
+#panel2 {
+  background-image: url(https://images.unsplash.com/photo-1548688265-62dae8daeb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+#panel3 {
+  background-image: url(https://images.unsplash.com/photo-1577703025450-4a543d6b4976?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+#panel4 {
+  background-image: url(https://images.unsplash.com/photo-1577703691096-6de1c5c3fa85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+} 
